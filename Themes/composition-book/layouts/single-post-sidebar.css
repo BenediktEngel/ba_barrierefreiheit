@@ -1,0 +1,24 @@
+/*
+ * Theme Name: composition-book
+ *
+ * Layout:Single-Post-Sidebar
+ *
+ * Learn more: https://developer.wordpress.org/themes/basics/template-files/
+*/
+
+
+@media screen and (min-width: 850px){
+
+	.single:not(.post-template-full-width) aside.widget-area-single-post{
+		width: 30%;
+		float: right;
+		display: block;
+	}
+
+	.single:not(.post-template-full-width) .site-main{
+		float: left;
+		width: 70%;
+		padding-right: 10px;
+	}
+
+}

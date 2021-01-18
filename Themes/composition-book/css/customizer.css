@@ -1,0 +1,15 @@
+/*
+* Customizer controls styles
+*
+* Theme: Composition Book;
+*/
+
+#customize-control-chocolate_passion_panel_posts_2,
+#customize-control-chocolate_passion_panel_posts_4,
+#customize-control-chocolate_passion_panel_text_position_2,
+#customize-control-chocolate_passion_panel_text_position_4{
+	background: #ddd;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+}
