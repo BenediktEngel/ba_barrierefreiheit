@@ -121,6 +121,9 @@ function xooblog_script()
     wp_enqueue_style('xooblog-bootstrap', get_theme_file_uri('/assets/css/bootstrap.min.css'), null, '1.0');
     wp_enqueue_style('xooblog-style', get_stylesheet_uri());
 
+    // Neues Stylesheet um Styles die durch die Überarbeitung benötigt werden einzubinden
+    wp_enqueue_style('barrierefreistyles', get_theme_file_uri('/assets/css/barrierefreistyles.css'), null, '1.0');
+
     wp_enqueue_script('xooblog-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array('jquery'), '1.00', true);
     wp_enqueue_script('sticky-kit', get_template_directory_uri() . '/assets/js/jquery.sticky-kit.js', array('jquery'), '1.00', true);
 
