@@ -27,3 +27,20 @@
   width: auto;
   z-index: 100000; /* Above WP toolbar. */
 }
+
+/* Styles der DefinitionLists für Meta-Daten (Prüfschritt 1.3.1b/1.1.1a/2.4.4a) */
+
+/* Damit das Aussehen wie in der Original-Version ist müssen die Dafault-Styles der DefinitionList überschrieben werden. */
+dd{
+  margin-bottom: 0;
+  margin-inline-start:0;
+  display: inline-block;
+}
+dl{
+  margin-bottom: 0;
+}
+/* Damit wie im Original ein Slash zwischen Autorenname und Datum steht wurde die Zeile 643 aus style.css an das dd-Element der Definitionlist angepasst. */
+.tecxoo-post-details .post-meta dd:not(:last-child)::after {
+    content: "/";
+}
+

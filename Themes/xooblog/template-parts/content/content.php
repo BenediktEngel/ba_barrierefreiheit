@@ -15,23 +15,40 @@
                         $archive_month = get_the_time('m');
                         $archive_day   = get_the_time('d');
                         ?>
-                        <a href="<?php echo esc_url(get_day_link($archive_year, $archive_month, $archive_day)); ?>" class="posted-on">
-                            <span class="dashicons dashicons-clock"></span>
-                            <?php echo get_the_date(); ?>
-                        </a>
-                        <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" class="post-author">
-                        <span class="dashicons dashicons-admin-users"></span>
-                            <?php the_author(); ?>
-                        </a>
+                    
+                    <!-- Fehler aus Prüfschritt 1.3.1b, 1.1.1a und 2.4.4a durch Verwendung einer DefinitionList behoben. -->
+
+                        <dl>
+                          <dt class="screen-reader-text">Posted on</dt>
+                          <dd>
+                            <a href="<?php echo esc_url(get_day_link($archive_year, $archive_month, $archive_day)); ?>" class="posted-on">
+                            	<span class="dashicons dashicons-clock"></span>
+                            	<?php echo get_the_date(); ?>
+                        		</a>
+                          </dd>
+                          <dt class="screen-reader-text">Author</dt>
+                          <dd>
+                            <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" class="post-author">
+                        			<span class="dashicons dashicons-admin-users"></span>
+                            	<?php the_author(); ?>
+                       			</a>
+                          </dd>
+                      </dl>
                     </div>
                     <div class="tecxoo-comments-like">
-                        <a href="<?php echo esc_url(get_comments_link($post->ID)); ?>" class="total-comments">
+                      <dl>
+                      <dt class="screen-reader-text">Comments</dt>
+                          <dd>
+                            <a href="<?php echo esc_url(get_comments_link($post->ID)); ?>" class="total-comments">
                             <span class="dashicons dashicons-admin-comments"></span>
                             <?php
                             $xooblog_comment_num = get_comments_number();
                             echo esc_html($xooblog_comment_num);
                             ?>
-                        </a>
+                       		 </a>
+                          </dd>
+                      </dl>
+                        
                     </div>
                 </div>
             </div>
