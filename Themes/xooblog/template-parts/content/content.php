@@ -64,12 +64,12 @@
                     </span>
                     <?php
 
-
+                    // Ausgabe der Kategorien angepasst, sodass der Fehler aus Prüfschritt 4.1.1a behoben wird.
                     if (!empty($categories)) {
-                        foreach ($categories as $category) {
-                            $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'xooblog'), $category->name)) . '">' . esc_html($category->name) . '</a>' . $separator;
-                        }
-                        echo trim($output, $separator);
+	                    foreach ($categories as $category) {
+		                    $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '"><span class="screen-reader-text">View all posts in </span>' . esc_html($category->name) . '</a>' . $separator;
+	                    }
+                    echo trim($output, $separator);
                     }
                     ?>
                 </div>
