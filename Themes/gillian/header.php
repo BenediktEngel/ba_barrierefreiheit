@@ -24,12 +24,13 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gillian' ); ?></a>
 	
-	<header id="masthead" class="site-header" role="banner" <?php 
+	<!-- Beheben des Fehlers in Prüfschritt 4.1.1a, dadurch das nur noch einmal das class-Attribut ausgegeben wird. -->
+	<header id="masthead" role="banner" class="site-header <?php 
 	    if ( get_header_image() ) { 
-	        echo 'class="header-bar header-background-image" style="background-image: url(\'';
+	        echo 'header-bar header-background-image" style="background-image: url(\'';
 			header_image();
 			echo '\')"'; 
-	    } ?>>
+	    } else{echo'"';}?>>
 		
 		<?php if ( has_nav_menu( 'top-menu' ) or has_nav_menu( 'social' ) ) {
 			echo '<nav id="site-navigation-top" class="main-navigation top-navigation" role="navigation" aria-label="';
