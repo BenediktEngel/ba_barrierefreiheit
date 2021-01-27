@@ -89,6 +89,8 @@ add_action( 'after_setup_theme', 'gillian_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+
+ /* Um den Fehler aus Prüfschritt 1.3.1a zu beheben müssen alle h2-Elemente im Folgenden auf h3 umgeschreiben werden. */
 function gillian_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Default Sidebar', 'gillian' ),
@@ -96,8 +98,8 @@ function gillian_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'gillian' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => esc_html__( 'Left Sidebar (Three Columns template)', 'gillian' ),
@@ -105,8 +107,8 @@ function gillian_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'gillian' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Widgets', 'gillian' ),
@@ -114,8 +116,8 @@ function gillian_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'gillian' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'gillian_widgets_init' );

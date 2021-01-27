@@ -13,5 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area sidebar" role="complementary" aria-label="<?php esc_attr_e( 'Default sidebar', 'gillian' ); ?>">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<!-- Überschrift für die Sidebar hinzugefügt um Fehler aus Prüfschritt 1.3.1a zu beheben. -->
+<h2 class="screen-reader-text">Sidebar</h2>		
+<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->
