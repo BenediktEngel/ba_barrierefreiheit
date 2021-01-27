@@ -44,3 +44,28 @@ dl{
     content: "/";
 }
 
+/* Farbanpassungen für Prüfschritt 1.4.3a */
+
+/* Textfarbe für die Kategorie des Beitrags wurde durch Anpassung der Helligkeit auf ausreichenden Kontast angepasst (überschreibt Zeile 2012-2015 der style.css) */
+.tecxoo-post-share .post-category a {
+  color: #737373; 
+}
+/* Textfarbe der Links in Kommentaren (wie Datum, Kommentator-Name, etc.) auf besseren Kontrast angepasst (überschreibt die Standardwerte aus Zeile 150 der bootstrap.css) */
+.comment-meta a {
+  color:  #006CE0;
+}
+.comment-content a {
+  color:  #006CE0;
+}
+/* Anpassung der Textfarbe des Kommentars durch setzen auf Schwarz (Überschreibt den Standard-Wert für Paragraphen aus Zeile 297 style.css) */
+.comment-content p {
+  color: black;
+}
+/* Farbe für Text im Footer durch Anpassung der Helligkeit auf ausreichend Kontrast geändert (Überschreibt die Zeile 1284 aus style.css)*/
+.tecxoo-copyright-text p {
+  color: #9C9C9C;
+}
+/* Textfarbe von Links im Beitrag angepasst (Überschreibt Zeile 656 der style.css) */
+.post-content a {
+	color:#CB4E0B;
+}
