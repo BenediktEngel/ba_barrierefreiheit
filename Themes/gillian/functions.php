@@ -162,6 +162,9 @@ function gillian_scripts() {
 	
 	wp_enqueue_script( 'gillian-widget-img-links', get_template_directory_uri() . '/js/widget-img-links.js', array('jquery'), '20160820', true );
 
+	/* Einbinden der neuen barrierefreistyles.css um Styles für die Überarbeitungen anzuwenden. */
+	wp_enqueue_style('barrierefreistyles', get_template_directory_uri() . '/barrierefreistyles.css');
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

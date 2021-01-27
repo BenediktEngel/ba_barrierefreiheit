@@ -14,52 +14,44 @@ if ( ! function_exists( 'gillian_entry_meta' ) ) :
  */
 function gillian_entry_meta() {
 	
-	// byline
-	echo '<p>';
-	_e( 'by ', 'gillian' );
-	the_author_posts_link();
-	echo '</p>';
-	
-	// date
-	echo '<p><i class="fa fa-calendar-o" aria-hidden="true"></i>';
-	the_time(get_option('date_format'));
-	echo '</p>';
 
-	// time
-	echo '<p><i class="fa fa-clock-o" aria-hidden="true"></i>';
-	the_time();
-	echo '</p>';
-	
-	// comments
-	echo '<p><i class="fa fa-comment" aria-hidden="true"></i>';
-	/* translators: %s: post title */
-	comments_popup_link( sprintf( __( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'gillian' ), get_the_title() ) );
-	echo '</p>';
+	/* Fehler aus Prüfschritt 1.3.1b und 2.4.4a durch hinzufügen einer DefinitionList für die Meta-Daten behoben. */
+// byline
+echo '<dl><dt class="screen-reader-text">';
+_e( 'by ', 'gillian' );
+	echo '</dt><dd>';
+the_author_posts_link();
+echo '</dd>';
 
-	// categories if they exist
-	if(has_category()) {
-		echo '<p><i class="fa fa-bookmark" aria-hidden="true"></i>';
-		the_category(', ');
-		echo '</p>';
-	}
+// date
+echo '<dt class="screen-reader-text">Published on</dt><dd><i class="fa fa-calendar-o" aria-hidden="true"></i>';
+the_time(get_option('date_format'));
 
-	// tags if they exist
-	if(has_tag()) {
-		echo '<p>';
-		the_tags('<i class="fa fa-tag" aria-hidden="true"></i> ', ', ');
-		echo '</p>';
-	}
+// time
+	echo '<i class="fa fa-clock-o" aria-hidden="true" style="padding-left: 20px;"></i>';
+the_time();
+echo '</dd>';
 
-	// edit link
-	edit_post_link(
-		sprintf(
-			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'gillian' ),
-			the_title( '<span class="screen-reader-text">"', '"</span>', false )
-		),
-		'<p><i class="fa fa-pencil" aria-hidden="true"></i>',
-		'</p>'
-	);
+
+// categories if they exist
+if(has_category()) {
+	echo '<dt class="screen-reader-text">Category</dt><dd><i class="fa fa-bookmark" aria-hidden="true"></i>';
+	the_category(', ');
+	echo '</dd>';
+}
+
+// tags if they exist
+if(has_tag()) {
+	echo '<dt class="screen-reader-text">Tags</dt><dd>';
+	the_tags('<i class="fa fa-tag" aria-hidden="true"></i> ', ', ');
+	echo '</dd>';
+}
+	echo '</dl>';
+// comments
+	echo '<p style="padding-right:20px;"><i class="fa fa-comment" aria-hidden="true"></i>';
+/* translators: %s: post title */
+comments_popup_link( sprintf( __( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'gillian' ), get_the_title() ) );
+echo '</p>';
 }
 endif;
 

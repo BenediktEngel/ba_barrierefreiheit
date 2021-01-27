@@ -1,0 +1,16 @@
+/* Überschreiben der Default-Styles */
+dd{
+  margin-bottom: 0;
+  margin-inline-start:0;
+}
+dl{
+  margin-bottom: 0;
+  display: inline-block;
+}
+/* Und anpassen der Regel die sonst auf Paragraphen in der Klasse entry-meta angewendet wird, sodass sie auf dd-Elemente angewendet wird (siehe style.css Zeile 1804-1809)*/
+.entry-meta dd {
+	display: inline-table;
+	padding-right: 20px;
+	margin-bottom: 0;
+	line-height: 1em;
+}
