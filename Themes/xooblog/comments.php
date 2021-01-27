@@ -1,6 +1,10 @@
 <div class="comments-wrap">
     <div id="comments" >
         <div class="col-full">
+                
+                <!-- Fehler aus Prüfschritt 1.3.1a durch hinzufügen einer H2-Überschrift für Screen-Reader behoben -->
+                <h2 class="screen-reader-text">Comments</h2>
+
                 <?php
 
                 // $xooblog_comment_num = get_comments_number();
