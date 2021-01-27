@@ -50,5 +50,25 @@
 
 <?php wp_footer(); ?>
 
+<!-- Fehler aus Prüfschritt 1.3.5a durch hinzufügen des Autocomplete-Attributs behoben -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+  	// Referenz zu den Textfeldern anhand der ID erstellen
+  	var author = document.getElementById("author");
+  	var email = document.getElementById("email");
+  	var url = document.getElementById("url");
+ 	 	// Prüfung ob Referenz vorhanden, da diese nicht angezeigt werden wenn man eingeloggt ist oder keine Kommentare zugelassen sind. Daraufhin setzen des Autocomplete Attributs mit passendem Wert.
+  	if(author != null){
+    	author.setAttribute("autocomplete", "name");
+  	}
+  	if(email != null){
+    	  email.setAttribute("autocomplete", "email");
+  	}
+  	if(url != null){
+    	url.setAttribute("autocomplete", "url");
+  	}
+	})
+</script>
+
 </body>
 </html>
