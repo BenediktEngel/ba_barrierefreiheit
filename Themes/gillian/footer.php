@@ -41,7 +41,7 @@
 		</div><!-- .site-info -->
 		
 		<div class="back-to-top">
-			<a href="#"><i class="fa fa-chevron-up" aria-hidden="true"><span class="screen-reader-text"><?php esc_html_e('Back to top','gillian'); ?></span></i></a>
+			<a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i><span class="screen-reader-text"><?php esc_html_e('Back to top','gillian'); ?></span></a>
 		</div>
 		
 		<div class="clearer"></div>
