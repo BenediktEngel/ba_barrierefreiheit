@@ -1,0 +1,431 @@
+# Copyright (C) 2021 Alexa Weidinger
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gillian 1.0.91\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/gillian\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-01-29T15:28:37+00:00\n"
+"PO-Revision-Date: 2021-01-29 16:50+0100\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Domain: gillian\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#. Theme Name of the theme
+msgid "Gillian"
+msgstr "Gillian"
+
+#. Theme URI of the theme
+msgid "http://alexaweidinger.com/gillian"
+msgstr "http://alexaweidinger.com/gillian"
+
+#. Description of the theme
+msgid ""
+"Gillian is focused on organizing and presenting large amounts of content in "
+"a logical, useful, and visually appealing manner. Fully responsive and "
+"accessibility ready, Gillian is suitable for education institutions, "
+"blogging platforms, libraries, and more. Gillian ships with a header image "
+"ready for use, which you can keep, delete, or replace as you see fit. Some "
+"other features of Gillian include: three layout templates, optional "
+"locations for additional menus, an optional social media menu with Font "
+"Awesome icons integrated, widgetized areas (two sidebars and in the footer), "
+"and color customization options to make the theme uniquely yours."
+msgstr ""
+
+#. Author of the theme
+msgid "Alexa Weidinger"
+msgstr "Alexa Weidinger"
+
+#. Author URI of the theme
+msgid "http://alexaweidinger.com"
+msgstr "http://alexaweidinger.com"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hoppla! Diese Seite kann nicht gefunden werden."
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Es sieht so aus, als wäre hier nichts. Vielleicht einen der folgenden Links "
+"oder eine Suche probieren?"
+
+#: 404.php:33
+msgid "Most Used Categories"
+msgstr "Meist verwendete Kategorien"
+
+#. translators: %1$s: smiley
+#: 404.php:51
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Versuchen Sie es mal im monatlichen Archiv. %1$s"
+
+#. translators: %s: post title
+#: comments.php:33
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "Ein Kommentar zu &ldquo;%s&rdquo;"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s Antwort auf &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Antworten auf &ldquo;%2$s&rdquo;"
+
+#: comments.php:53 comments.php:74
+msgid "Comment navigation"
+msgstr "Kommentar Navigation"
+
+#: comments.php:56 comments.php:77
+msgid "Older Comments"
+msgstr "Ältere Kommentare"
+
+#: comments.php:57 comments.php:78
+msgid "Newer Comments"
+msgstr "Neuere Kommentare"
+
+#: comments.php:91
+msgid "Comments are closed."
+msgstr "Kommentare sind deaktiviert."
+
+#: footer.php:18
+msgid "Footer widgets"
+msgstr "Footer Widgets"
+
+#: footer.php:24
+msgid "Y"
+msgstr "Y"
+
+#: footer.php:36
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: footer.php:36
+msgid "Powered by %s"
+msgstr "Unterstützt durch %s"
+
+#: footer.php:40
+msgid "Theme: %1$s"
+msgstr "Theme: %1$s"
+
+#: footer.php:44
+msgid "Back to top"
+msgstr "Zurück nach oben"
+
+#: functions.php:47
+msgid "Top Menu (Optional)"
+msgstr "Top Menü (Optional)"
+
+#: functions.php:48
+msgid "Social Menu (Optional)"
+msgstr "Social Media Menü (Optional)"
+
+#: functions.php:49
+msgid "Bottom Menu (Main)"
+msgstr "Footer Menü (Optional)"
+
+#: functions.php:96
+msgid "Default Sidebar"
+msgstr "Standard Sidebar"
+
+#: functions.php:98 functions.php:107 functions.php:116
+msgid "Add widgets here."
+msgstr "Füge hier Widgets hinzu."
+
+#: functions.php:105
+msgid "Left Sidebar (Three Columns template)"
+msgstr "Linke Sidebar (Drei Spalten Layout)"
+
+#: functions.php:114
+msgid "Footer Widgets"
+msgstr "Footer Widgets"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Springe zum Inhalt"
+
+#: header.php:37
+msgid "Top Navigation"
+msgstr "Top Navigation"
+
+#: header.php:39 header.php:80
+msgid "Menu"
+msgstr "Menü"
+
+#: header.php:78
+msgid "Primary Navigation"
+msgstr "Hauptnavigation"
+
+#: inc/customizer.php:37
+msgid "Top Menu: Link text color"
+msgstr "Top Menü: Link Textfarbe"
+
+#: inc/customizer.php:49
+msgid "Top Menu: Background color"
+msgstr "Top Menü: Hintergrundfarbe"
+
+#: inc/customizer.php:61
+msgid "Top Menu: Link background color on hover"
+msgstr "Top Menü: Link Hintergrundfarbe bei Hover"
+
+#: inc/customizer.php:77
+msgid "Header: Background color"
+msgstr "Header: Hintergrundfarbe"
+
+#: inc/customizer.php:89
+msgid "Header: Search bar background color"
+msgstr "Header: Suchleiste Hintergrundfarbe"
+
+#: inc/customizer.php:105
+msgid "Bottom/Primary Menu: Link text color"
+msgstr "Footer/Haupt-Menü: Link Textfarbe"
+
+#: inc/customizer.php:117
+msgid " Bottom/Primary Menu: Background color"
+msgstr "Footer/Haupt-Menü: Hintergrundfarbe"
+
+#: inc/customizer.php:129
+msgid "Bottom/Primary Menu: Link background color on hover"
+msgstr "Footer/Haupt-Menü: Link Hintergrundfarbe bei Hover"
+
+#: inc/customizer.php:145
+msgid "Content: Main text color"
+msgstr "Inhalt: Haupttextfarbe"
+
+#: inc/customizer.php:157
+msgid "Content: Link color"
+msgstr "Inhalt: Link Farbe"
+
+#: inc/customizer.php:169
+msgid "Content: Link color on hover"
+msgstr "Inhalt: Link Farbe bei Hover"
+
+#: inc/customizer.php:181
+msgid "Content: Link underline color"
+msgstr "Inhalt: Link Unterstreichung Farbe"
+
+#: inc/customizer.php:193
+msgid "Content: Link underline color on hover"
+msgstr "Inhalt: Link Unterstreichung Farbe bei Hover"
+
+#: inc/customizer.php:205
+msgid "Content: Post title link color"
+msgstr "Inhalt: Beitragstitel Link Farbe"
+
+#: inc/customizer.php:217
+msgid "Content: Accent color (separator lines)"
+msgstr "Inhalt: Akzentfarbe "
+
+#: inc/customizer.php:229
+msgid ""
+"Content: Entry meta (date, time, comments etc. beneath post title) text color"
+msgstr ""
+"Inhalt: Metadaten (Datum, Uhrzeit, Kommentare, etc. Unter dem Beitragstitel) "
+"Textfarbe"
+
+#: inc/customizer.php:241
+msgid "Content: Entry meta icons color"
+msgstr "Inhalt: Metadaten Icon Farbe"
+
+#: inc/customizer.php:257
+msgid "Comments: Background color"
+msgstr "Kommentare: Hintergrundfarbe"
+
+#: inc/customizer.php:269
+msgid "Comments: Border color"
+msgstr "Kommentare: Randfarbe"
+
+#: inc/customizer.php:281
+msgid "Comments: Input field text color"
+msgstr "Kommentare: Eingabefeld Textfarbe"
+
+#: inc/customizer.php:293
+msgid "Comments: Input field background on focus"
+msgstr "Kommentare: Eingabefeld Hintergrundfarbe bei Focus"
+
+#: inc/customizer.php:305
+msgid "Comments: Link color"
+msgstr "Kommentare: Link Farbe"
+
+#: inc/customizer.php:317
+msgid "Comments: Reply link text color"
+msgstr "Kommentare: Antworten Link Textfarbe"
+
+#: inc/customizer.php:329
+msgid "Comments: Reply link background color"
+msgstr "Kommentare: Antworten Link Hintergrundfarbe"
+
+#: inc/customizer.php:341
+msgid "Comments: Reply link background color on hover"
+msgstr "Kommentare: Antworten Link Hintergrundfarbe bei Hover"
+
+#: inc/customizer.php:357
+msgid "Buttons (reset/submit/etc.): Text color"
+msgstr "Buttons (Reset/Senden/etc.): Textfarbe"
+
+#: inc/customizer.php:369
+msgid "Buttons (reset/submit/etc.): Background color"
+msgstr "Buttons (reset/submit/etc.):  Hintergrundfarbe"
+
+#: inc/customizer.php:381
+msgid "Buttons (reset/submit/etc.): Background color on hover"
+msgstr "Buttons (reset/submit/etc.): Hintergrundfarbe bei Hover"
+
+#: inc/customizer.php:397
+msgid "Sidebar: Background color"
+msgstr "Sidebar: Hintergrundfarbe"
+
+#: inc/customizer.php:409
+msgid ""
+"Sidebar: Accent #1 (Widget titles, select & search field input text color, "
+"etc.)"
+msgstr "Sidebar: Akzentfarbe #1 (Widget Titel, Eingabefelder, etc.)"
+
+#: inc/customizer.php:421
+msgid ""
+"Sidebar: Accent #2 (bottom border, border under Archives lists, Categories "
+"lists, etc.)"
+msgstr "Sidebar: Akzentfarbe #2 (Umrandungen, Listen, etc.)"
+
+#: inc/customizer.php:433
+msgid "Sidebar: Text color"
+msgstr "Sidebar: Textfarbe"
+
+#: inc/customizer.php:445
+msgid "Sidebar: Link color"
+msgstr "Sidebar: Link Farbe"
+
+#: inc/customizer.php:457
+msgid "Sidebar: Link color on hover"
+msgstr "Sidebar: Link Farbe bei Hover"
+
+#: inc/customizer.php:469
+msgid "Sidebar: Link underline color"
+msgstr "Sidebar: Link Unterstreichung Farbe"
+
+#: inc/customizer.php:481
+msgid "Sidebar: Link underline color on hover"
+msgstr "Sidebar: Link Unterstreichung Farbe bei Hover"
+
+#: inc/customizer.php:497
+msgid "Footer: Background color"
+msgstr "Footer: Hintergrundfarbe"
+
+#: inc/customizer.php:509
+msgid "Footer: Text color"
+msgstr "Footer: Textfarbe"
+
+#: inc/customizer.php:521
+msgid "Footer: Link color"
+msgstr "Footer: Link Farbe"
+
+#: inc/customizer.php:533
+msgid "Footer: Link color on hover"
+msgstr "Footer: Link Farbe bei Hover"
+
+#: inc/customizer.php:545
+msgid "Footer: Link underline color"
+msgstr "Footer: Link Unterstreichung Farbe"
+
+#: inc/customizer.php:557
+msgid "Footer: Link underline color on hover"
+msgstr "Footer: Link Unterstreichung Farbe bei Hover"
+
+#: inc/customizer.php:569
+msgid ""
+"Footer: Accent #1 (Widget titles, select & search field input text color, "
+"etc.)"
+msgstr "Footer: Akzentfarbe #1 (Widget Titel, Eingabefelder, etc.)"
+
+#: inc/customizer.php:581
+msgid ""
+"Footer: Accent #2 (Back to top link, bottom border, border under Archives "
+"lists, Categories lists, etc.)"
+msgstr "Footer: Akzentfarbe #2 (Zurück nach oben, Umrandungen, etc.)"
+
+#: inc/template-tags.php:21
+msgid "by "
+msgstr "bei"
+
+#. translators: %s: post title
+#: inc/template-tags.php:53
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+"Hinterlasse einen Kommentar <span class=„screen-reader-text“> zu %s</span>"
+
+#. Template Name of the theme
+msgid "Full Width Page"
+msgstr "Gesamtbreite der Seite"
+
+#. Template Name of the theme
+msgid "Three Columns"
+msgstr "Drei Spalten"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für:  %s"
+
+#: searchform.php:5
+msgid "Search for"
+msgstr "Suche nach"
+
+#: searchform.php:7 searchform.php:8
+msgid "Search"
+msgstr "Suchen"
+
+#: sidebar-three-columns.php:15
+msgid "Three columns sidebar"
+msgstr "Drei Spalten Sidebar"
+
+#: sidebar.php:15
+msgid "Default sidebar"
+msgstr "Standard Sidebar"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: template-parts/content-none.php:21
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Bereit deinen ersten Beitrag zu veröffentlichen? <a href=„%1$s“>Fang hier "
+"an</a>."
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Entschuldigung, aber es wurde nichts passendes zu deiner Suche gefunden. "
+"Versuche es bitte nochmal mit anderen Stichworten."
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es sieht so aus als konnten wir nicht das finden wonach du suchst. Versuche "
+"es doch mal mit einer Suche."
+
+#: template-parts/content-page.php:27 template-parts/content.php:43
+msgid "Pages:"
+msgstr "Seiten:"
+
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:38
+msgid "Edit %s"
+msgstr "Bearbeite %s"
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:38
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lese weiter über %s <span class=„meta-nav“>&rarr;</span>"
