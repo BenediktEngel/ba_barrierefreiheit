@@ -89,3 +89,13 @@ function barrierefreie_bloecke_block_assets() { // phpcs:ignore
 
 // Hook: Block assets.
 add_action( 'init', 'barrierefreie_bloecke_block_assets' );
+
+// Zum Erfüllen von Anforderung F001 - Skript welches Standardblöcke deaktiviert einreihen
+function barrierefreie_bloecke_deny_list_blocks() {
+	wp_enqueue_script(
+			'barrierefreie-bloecke-deny-list-blocks',
+			plugins_url( 'removeBlocks.js', __FILE__ ),
+			array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' )
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'barrierefreie_bloecke_deny_list_blocks' );
