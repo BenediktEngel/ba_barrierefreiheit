@@ -9,4 +9,8 @@
  * Webpack is compiling as the input file.
  */
 
-import './block/block.js';
+//import './block/block.js';
+import './audio/block.js';
+import './heading/block.js';
+import './table/block.js';
+import './video/block.js'; 
